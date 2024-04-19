@@ -76,6 +76,17 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "ef71",
+      "name": "1234134",
+      "budget": "1231241",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [

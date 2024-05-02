@@ -31,7 +31,7 @@ function Projects() {
             .then((resp) => resp.json())
             .then((data) => {
                 setProjects(data);
-                setRemoveLoading(true);
+                setRemoveLoading(true)
             })
             .catch((err) => console.log(err));
         }, 300);

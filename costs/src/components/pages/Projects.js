@@ -25,7 +25,7 @@ function Projects() {
             fetch('http://localhost:5000/projects', {
                 method: 'GET',
                 headers: {
-                    'Content-Type': 'application/json',
+                'Content-Type': 'application/json',
                 },
             })
             .then((resp) => resp.json())
@@ -36,7 +36,6 @@ function Projects() {
             .catch((err) => console.log(err));
         }, 300);
     }, [])
-    
 
     return (
     <div className={styles.project_container}>

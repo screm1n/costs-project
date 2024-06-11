@@ -53,7 +53,7 @@ fetch(`http://localhost:5000/projects/${id}`, {
     .catch(err => console.log(err))
 }
 
-    }
+    
 
     return (
         <div className={styles.project_container}>

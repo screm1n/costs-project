@@ -2,8 +2,8 @@
   "projects": [
     {
       "id": "30b5",
-      "name": "Testando edição",
-      "budget": "1200",
+      "name": "Testando mensagem de edição",
+      "budget": "5",
       "category": {
         "id": "3",
         "name": "Design"

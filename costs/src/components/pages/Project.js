@@ -29,8 +29,24 @@ function Project() {
         }, 500)
     }, [id])
 
-    function editPost() {
+    function editPost(project) {
+        if(project.budget < project.cost) {
+            // mensagem
+        }
 
+        fetch(`http://localhost:5000/projects/${project.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(project),
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            setProject(data)
+            setShowProjectForm(false)
+            // mensagem
+        })
     }
 
     function toggleProjectForm () {

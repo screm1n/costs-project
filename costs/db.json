@@ -2,22 +2,22 @@
   "projects": [
     {
       "id": "30b5",
-      "name": "Curso de Desenvolvimento Web Responsivo",
-      "budget": "50000",
+      "name": "Testando edição",
+      "budget": "1200",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
       "cost": 0,
       "services": []
     },
     {
       "id": "a5f6",
-      "name": "testeeeeeee",
-      "budget": "123123",
+      "name": "Teste",
+      "budget": "120",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": []

@@ -101,11 +101,18 @@ function Project() {
                         )}
                     </div>
                     <div className={styles.service_form_container}>
-                            <h2>Adiione um serviço:</h2>
+                            <h2>Adicione um serviço:</h2>
                             <button className={styles.btn} onClick={toggleServiceForm}>
                             {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
                         </button>
+                        <div className={styles.project_info}>
+                            {showServiceForm && <div>formulário do serviço</div>}
+                        </div>
                     </div>
+                    <h2>Serviços</h2>
+                    <Container customClass="start">
+                            <p>Itens de serviços</p>
+                    </Container>
                 </Container>
             </div>
         ) : (

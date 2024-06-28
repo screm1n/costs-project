@@ -37,7 +37,7 @@ function Project() {
         setMessage('')
 
         if(project.budget < project.cost) {
-           setMessage('O orçamento não pode ser menor que o custo do projeto.')
+           setMessage('O valor do orçamento não pode ser menor que o custo do projeto.')
            setType('error')
            return false
         }
@@ -86,7 +86,7 @@ function Project() {
                                     <span>Total de orçamento:</span> R${project.budget}
                                 </p>
                                 <p>
-                                    <span>Total utilizado:</span> R${project.cost}
+                                    <span>Valor total utilizado:</span> R${project.cost}
                                 </p>
                                 
                                 
@@ -106,7 +106,7 @@ function Project() {
                             {!showServiceForm ? 'Adicionar serviço' : 'Fechar'}
                         </button>
                         <div className={styles.project_info}>
-                            {showServiceForm && <div>formulário do serviço</div>}
+                            {showServiceForm && <div>Formulário do serviço</div>}
                         </div>
                     </div>
                     <h2>Serviços</h2>

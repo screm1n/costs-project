@@ -1,3 +1,5 @@
+import {parse, v4 as uuidv4} from 'uuid'
+
 import styles from './Project.module.css'
 
 import {useParams} from 'react-router-dom'
@@ -60,7 +62,40 @@ function Project() {
 
     }
 
-    function createService() {
+    function createService(project) {
+
+        // ultimo servico
+        const lastService = project.services[project.services.length - 1]
+
+        lastService.id = uuidv4()
+
+        const lastServiceCost = lastService.cost
+
+        const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+
+        // se passar do valor maximo
+        if(newCost > parseFloat(project.budget)) {
+            setMessage('Orçamento ultrapassado, verifique o valor do serviço')
+            setType('error')
+            project.services.pop()
+            return false
+        }
+
+        // adicionar custo de serviço ao valor total
+        project.cost = newCost
+
+        // atualizar projeto
+        fetch(`http://localhost:5000/projects/${project.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        }).then((resp) => resp.json())
+        .then((data) => {
+            // exibir os serviços
+        })
+        .catch(err => console.log(err))
 
     }
 

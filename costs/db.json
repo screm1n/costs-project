@@ -8,7 +8,7 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 1998,
+      "cost": 4321,
       "services": [
         {
           "name": "99999999",
@@ -21,6 +21,12 @@
           "cost": "999",
           "description": "99",
           "id": "842e22f7-27d1-4dec-a99a-5edaf795303d"
+        },
+        {
+          "name": "332",
+          "cost": "2323",
+          "description": "22",
+          "id": "5f3c8187-e2ec-4b91-aa02-960db55b08a4"
         }
       ]
     },
@@ -32,8 +38,21 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "services": []
+      "cost": 35,
+      "services": [
+        {
+          "name": "sdfdsfdssdf",
+          "cost": "12",
+          "description": "1",
+          "id": "1a0034b4-8645-4587-976c-3e465bce34c3"
+        },
+        {
+          "name": "23",
+          "cost": "23",
+          "description": "23",
+          "id": "70afb242-8e79-4b90-93ae-eabe62d9a385"
+        }
+      ]
     }
   ],
   "categories": [

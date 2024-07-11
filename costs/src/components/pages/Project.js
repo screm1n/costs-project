@@ -115,7 +115,7 @@ function Project() {
         fetch(`http//localhost:5000/projects/${projectUpdated.id}`, {
             method: 'PATCH',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             bod: JSON.stringify(projectUpdated)
         }).then((resp) => resp.json())
@@ -124,9 +124,7 @@ function Project() {
             setServices(servicesUpdated)
             setMessage('Serviço removido com sucesso!')
         })
-        
-        .catch(err => console.log(err))
-
+        .catch((err) => console.log(err))
     }
 
     function toggleProjectForm () {

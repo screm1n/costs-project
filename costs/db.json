@@ -38,21 +38,8 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 35,
-      "services": [
-        {
-          "name": "sdfdsfdssdf",
-          "cost": "12",
-          "description": "1",
-          "id": "1a0034b4-8645-4587-976c-3e465bce34c3"
-        },
-        {
-          "name": "23",
-          "cost": "23",
-          "description": "23",
-          "id": "70afb242-8e79-4b90-93ae-eabe62d9a385"
-        }
-      ]
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [

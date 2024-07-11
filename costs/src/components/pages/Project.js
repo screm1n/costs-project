@@ -117,12 +117,13 @@ function Project() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(projectUpdated)
-        }).then((resp) => resp.json())
-        .then((data) => {
-            setProject(projectUpdated)
-            setServices(servicesUpdated)
-            setMessage('Serviço removido com sucesso!')
+            body: JSON.stringify(projectUpdated),
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                setProject(projectUpdated)
+                setServices(servicesUpdated)
+                setMessage('Serviço removido com sucesso!')
         })
         .catch((err) => console.log(err))
     }

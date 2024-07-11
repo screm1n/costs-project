@@ -117,7 +117,7 @@ function Project() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            bod: JSON.stringify(projectUpdated)
+            body: JSON.stringify(projectUpdated)
         }).then((resp) => resp.json())
         .then((data) => {
             setProject(projectUpdated)

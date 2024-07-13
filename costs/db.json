@@ -8,27 +8,8 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 4321,
-      "services": [
-        {
-          "name": "99999999",
-          "cost": "999",
-          "description": "99",
-          "id": "842e22f7-27d1-4dec-a99a-5edaf795303d"
-        },
-        {
-          "name": "99999999",
-          "cost": "999",
-          "description": "99",
-          "id": "842e22f7-27d1-4dec-a99a-5edaf795303d"
-        },
-        {
-          "name": "332",
-          "cost": "2323",
-          "description": "22",
-          "id": "5f3c8187-e2ec-4b91-aa02-960db55b08a4"
-        }
-      ]
+      "cost": 999,
+      "services": []
     },
     {
       "id": "a5f6",
